@@ -1,4 +1,4 @@
-# Store adjacency in nested dictionary
+# Store adjacency city path and this estimate cost form goal state in nested dictionary
 graph = {
     'BL':[['J',446]],
 	'J':[['BL',629], ['B',421], ['C',246]],
@@ -19,6 +19,7 @@ def greedyBestFirstSearch(graph, start, goal):
 
     while queue:
         node = queue.pop(0)
+
         if node not in explored:
             explored.append(node)
             if node == goal:
@@ -29,9 +30,15 @@ def greedyBestFirstSearch(graph, start, goal):
 
     print( ' -> '.join(i for i in explored))
 
-# Define start state and goal state
-start = 'BL'
-goal = 'Y'
 
-# get path route using call the function
-greedyBestFirstSearch(graph, start, goal)
+# Define main function to operate A * Star function
+def main():
+    # Define start state and goal state
+    start = 'BL'
+    goal = 'Y'
+
+    # get path route using call the function A * Search
+    greedyBestFirstSearch(graph, start, goal)
+
+# Run the program using call main function
+main()
