@@ -1,6 +1,6 @@
 Graph = {
 	'BL':{'J':446},
-	'J':{'J':629, 'B':421, 'C':246},
+	'J':{'BL':629, 'B':421, 'C':246},
 	'B':{'J':446, 'Ba':320},
 	'C':{'Ba':320, 'S':108, 'Ci':156, 'P':132},
 	'Ba':{'B':320, 'C':246, 'T':248},
@@ -11,6 +11,21 @@ Graph = {
 	'Y':{ 'S':108, 'Ci':156, 'P':132},
 }
 
-#for i in Graph:
-#	print(i)
+start = 'BL'
+target = 'Y'
 
+for i in Graph:
+	for j in Graph[i]:
+		value = Graph[i]
+		print(value[j])
+
+
+
+
+def gbfs(Graph, start, target):
+	state = Graph.get(start)
+	
+
+
+
+gbfs(Graph, start, target)
