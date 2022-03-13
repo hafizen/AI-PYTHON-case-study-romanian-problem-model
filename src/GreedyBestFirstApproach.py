@@ -1,4 +1,4 @@
-# Store adjacency city path and this heuristic value (estimate cost straight line distance) form goal state in nested list
+# Store adjacency city path and this heuristic value (estimate cost straight line distance) to reach goal state in nested list
 graph = {
     'BL':[['J',446]],
     'J':[['BL',629], ['B',421], ['C',246]],
