@@ -1,1 +1,1 @@
-# AI-case-study-PYTHON
+# Studi Kasus Perjalanan dari Bandar Lampung (BL) ke Yogyakarta (Y)
