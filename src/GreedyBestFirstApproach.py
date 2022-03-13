@@ -1,15 +1,15 @@
-# Store adjacency city path and this estimate cost form goal state in nested dictionary
+# Store adjacency city path and this heuristic value (estimate cost straight line distance) form goal state in nested list
 graph = {
     'BL':[['J',446]],
-	'J':[['BL',629], ['B',421], ['C',246]],
-	'B':[['J',446], ['Ba',320]],
-	'C':[['Ba',320], ['S',108], ['Ci',156], ['P',132]],
-	'Ba':[['B',320], ['C',246], ['T',248]],
-	'T':[['Ba',320], ['Ci',156]],
-	'Ci':[['T',248], ['C',246], ['P',132]],
-	'P':[['Ci',156], ['C',246], ['Y',0]],
-	'S':[['C',246], ['Y',0]],
-	'Y':[['S',108], ['Ci',156], ['P',132]]
+    'J':[['BL',629], ['B',421], ['C',246]],
+    'B':[['J',446], ['Ba',320]],
+    'C':[['Ba',320], ['S',108], ['Ci',156], ['P',132]],
+    'Ba':[['B',421], ['C',246], ['T',248]],
+    'T':[['Ba',320], ['Ci',156]],
+    'Ci':[['T',248], ['C',246], ['P',132]],
+    'P':[['Ci',156], ['C',246], ['Y',0]],
+    'S':[['C',246], ['Y',0]],
+    'Y':[['S',108], ['Ci',156], ['P',132]]
 }
 
 # Define function to implement Greedy Best First Search
